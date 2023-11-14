@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Booking Appointment App</title>
+  </head>
+  <body>
+    <section class="container">
+      <form id="my-form" onsubmit="saveToCrudCrud(event)">
+        <h1>Add User</h1>
+        <div class="msg"></div>
+        <div>
+          <label for="name">Name:</label>
+          <input id='username' type="text" name="username"  required/>
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input id='email' type="email" name="emailId"  required/>
+        </div>
+        <div> 
+          <label> Phone Number</label>
+          <input id='phonenumber' type="tel" name="phonenumber" />
+        </div>
+
+        <button> Submit </button>
+      </form>
+
+      <ul id='listOfUsers'></ul>
+    
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
